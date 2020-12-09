@@ -35,6 +35,7 @@ nav{
     height: 2px;
     background-color: azure;
     margin: 5px;
+    transition: all 0.3s ease;
 
 }
 @media screen and (max-width:1024px){
@@ -50,7 +51,7 @@ nav{
         position: absolute;
         right: 0px;
         height: 92vh;
-        top: 12vh;
+        top: 15vh;
         background-color: rgb(4, 4, 95);
         display: flex;
         flex-direction: column;
@@ -69,4 +70,24 @@ nav{
 }
 .nav-active{
     transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,5px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-5px);
 }
