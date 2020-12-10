@@ -1,8 +1,10 @@
-*{
+body{
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;  
 }
+/*naviBar*/
 nav{
     display: flex;
     justify-content: space-around;
@@ -90,4 +92,95 @@ nav{
 }
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-5px);
+}
+
+/* contenu about*/
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(4, 4, 95);
+}
+p{
+    width: 70%;
+    text-align: justify;
+    margin: auto;
+    margin-top: 5%;
+}
+
+/*section services*/
+.boxes{
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: wrap row;
+    flex-flow: wrap row;
+    justify-content: space-around;
+    background-color:  rgb(4, 4, 95);
+    margin-top: -7px;
+}
+.soustitre{
+    transform: rotate(-90deg);
+    position: absolute;
+    color: rgb(224, 224, 252);
+    font-weight: bolder;
+    font-size: 100px;
+    letter-spacing: 5px;
+    width: 500px;
+    height: 150px;
+    left: -200px;
+    
+
+}
+.boxe1{
+    margin-left:120px;
+    color: rgb(240, 255, 255);
+    width: 300px;
+    text-align: justify;
+
+}
+.boxe{
+    color: rgb(224, 224, 252);
+    width: 300px;
+    text-align: justify;
+
+
+}
+.picto{
+    padding: 10px;
+}
+.picto:hover{
+    background-color: rgb(240, 255, 255, 0.75);
+    border-radius:10px 0;
+} 
+
+/*works*/
+.diapo{
+    margin-left:120px;
+    
+}
+.conteneur1{
+    overflow: hidden;
+    max-width: 960px;
+    margin: 50px auto;
+    box-shadow: 0px 15px 10px -5px #777;
+}
+.d1{
+    width: 3840px;
+    height: 190px;
+    background-color: #EDEDED;
+    background-image: url(img/diapo.JPG);
+    animation: defilement1 20s linear infinite;
+}
+@keyframes defilement1{
+    0%{transform: translate(0,0);}
+    100%{transform: translate(-2880px,0);}
+}
+.d1:hover{
+    animation-play-state: paused;
 }
