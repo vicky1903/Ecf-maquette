@@ -129,12 +129,11 @@ p{
     position: absolute;
     color: rgb(224, 224, 252);
     font-weight: bolder;
-    font-size: 100px;
+    font-size: 90px;
     letter-spacing: 5px;
-    width: 500px;
+    width: 550px;
     height: 150px;
-    left: -200px;
-    
+    left: -200px;    
 
 }
 .boxe1{
@@ -162,6 +161,7 @@ p{
 /*works*/
 .diapo{
     margin-left:120px;
+    height: 500px;
     
 }
 .conteneur1{
@@ -186,13 +186,13 @@ p{
 }
 /*formulaire*/
 form {
-    margin: auto;
     margin-bottom: 30px;
+    margin-left:120px;
     width: 400px;
-    padding: 15px;
+    padding: 50px;
     border: 2px solid rgb(240, 255, 255);
     border-radius: 1em;
-    margin-left: 50px;
+    color: rgb(240, 255, 255);
 }
   
 form div + div {
@@ -234,7 +234,21 @@ button {
     border: 2px solid rgb(240, 255, 255);
     border-radius: 1em;
     text-align: center;
+    height: 415px;
 }
 .carte{
     margin-top: 30px;
+}
+main{
+    min-height:100%;
+    margin:0 auto;
+    position:relative;
+}
+footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    padding-top:50px;
+    height:100px;
+    color:  rgb(4, 4, 95);
 }
